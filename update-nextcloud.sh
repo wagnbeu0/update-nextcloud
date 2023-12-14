@@ -1,4 +1,8 @@
 #!/bin/bash
+# Version 1.0.0
+# Written by Benjamin Wagner, see https://github.com/wagnbeu0/update-nextcloud for updates
+
+
 # Please set here the URL how your nextcloud is available without HTTPS or HTTP. It is need later when configuring Fulltext Search
 # I recommend to use under /var/www as document root the domain name, like /var/www/intranet.localhost, not the html default folder /var/www/html
 # export NC_URL=html
