@@ -6,7 +6,8 @@
 # because in next version of the script it will not contain any user variables
 
 # Please set here the URL how your nextcloud is available without HTTPS or HTTP
-export NC_URL=intranet.mydoamin.com
+export NC_URL=intranet.mydomain.com
+
 # Please set here the path of your local nextcloud root folder
 export NC_ROOT=/var/www/$NC_URL/nextcloud
 
@@ -20,6 +21,7 @@ if [[ -f "/etc/nc-updater.conf" ]]; then
 else
         echo No Config file found, will create /etc/nc-updater.conf now:
         cat "$0" | head -n 15 | tail -8 >>/etc/nc-updater.conf
+        echo Please check all variables
 fi
 
 echo Update all local Apps
